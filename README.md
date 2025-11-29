@@ -86,5 +86,9 @@ cd twrp-omni
 
 # 加载编译环境变量
 . build/envsetup.sh
+
+
 剩下的参考https://cuoxianxu.cn/index.php/archives/41/
+
+
 视频参考https://www.bilibili.com/video/BV13YbhzAEdC?vd_source=9ffa5571dde9c009e7466b4dc8f2e11b
