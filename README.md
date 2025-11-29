@@ -63,20 +63,32 @@ Twrpdtgen（TWRP Device Tree Generator）是一款自动生成设备树的工具
 
 # 3.1 安装Twrpdtgen
 #安装依赖
+
 sudo apt install -y python3-pip
+
 sudo pip3 install twrpdtgen
 3.2 生成设备树
+
 步骤1：获取设备的boot.img
+
 从设备中提取：通过adb pull /dev/block/bootdevice/by-name/boot boot.img
+
 或从官方ROM固件中解压获取
+
 步骤2：生成设备树
+
 #进入源码的设备目录
+
 cd twrp-omni/device
 
 #使用twrpdtgen生成设备树（替换<manufacturer>为厂商名，<device>为设备型号，<path_to_boot.img>为boot.img路径）
+
 python3 -m twrpdtgen -o <manufacturer>/<device> <path_to_boot.img>
+
 示例（为一加设备生成树）：
+
 python3 -m twrpdtgen -o OnePlus/PCL110 boot.img
+
 生成的设备树会位于device/<manufacturer>/<device>目录，包含Android.mk、twrp.fstab等关键文件，可根据实际需求进一步修改。
 
 # 四、编译TWRP
