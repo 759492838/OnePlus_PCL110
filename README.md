@@ -122,7 +122,7 @@ python3 -m twrpdtgen -o <manufacturer>/<device> <path_to_boot.img>
 
 示例（为一加设备生成树）：
 
-python3 -m twrpdtgen -o OnePlus/PCL110 boot.img
+python3 -m twrpdtgen -o OnePlus/PCL110 vendor_boot.img
 
 生成的设备树会位于device/<manufacturer>/<device>目录，包含Android.mk、twrp.fstab等关键文件，可根据实际需求进一步修改。
 
