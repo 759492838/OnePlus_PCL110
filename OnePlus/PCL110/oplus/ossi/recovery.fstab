@@ -83,4 +83,3 @@ auto                      vfat      /devices/platform/11200000.usb3_xhci*     fl
 /reserve2                 emmc      /dev/block/by-name/reserve2               flags=display=reserve2
 /opporeserve              ext4      /dev/block/by-name/oplusreserve2          flags=display=opporeserve
 /data ext4 /dev/block/bootdevice/by-name/userdata flags=forceencrypt=ice;length=-16384
-
